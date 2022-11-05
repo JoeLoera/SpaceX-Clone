@@ -124,6 +124,26 @@ section{
     background-image: url('../img/section-a.webp');
 }
 
+.section-b{
+    background-image: url('../img/section-b.webp');
+}
+
+.section-c{
+    background-image: url('../img/section-c.webp');
+}
+
+.section-d{
+    background-image: url('../img/section-d.webp');
+}
+
+.section-e{
+    background-image: url('../img/section-e.webp');
+}
+
+.section-f{
+    background-image: url('../img/section-f.webp');
+}
+
 .btn {
     position: relative;
     display: inline-block;
@@ -164,7 +184,8 @@ section{
     position: absolute;
     bottom: 50px;
     left: 50%;
-    transform: traslateX(-50%);
+    transform: translateX(-50%);
+    animation: fadeBounce 5s infinite;
 }
 
 /* Animations */
@@ -188,6 +209,11 @@ section{
     80%,
     100%{
         opacity: 0;
-        transform: translateY(-20px)
+        transform: translateY(-20px);
+    }
+
+    40% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
